@@ -1,0 +1,17 @@
+<!--
+a = 5;if(a==0){a=1}
+var slump = Math.random();
+var talet = Math.round(slump * (a-1))+1;
+function create() { 
+this.under = '' 
+}
+b = new Array() 
+for(var i=1; i<=a; i++) { b[i] = new create() } 
+b[1].under ='<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=高薪职位推荐"><font color=#006633>高薪职位推荐</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=紧缺技术人才"><font color=#006633>紧缺技术人才</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=沿海最好就业的专业"><font color=#006633>沿海最好就业的专业</a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=年薪最高的十个工种"><font color=#006633>年薪最高的十个工种</font></a>'
+b[2].under ='<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=特长工种"><font color=#006633>特长工种</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=十大高薪企业"><font color=#006633>十大高薪企业</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=中国知名企业福利如何"><font color=#006633>中国知名企业福利如何</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=沿海薪水标准"><font color=#006633>沿海薪水标准</font></a>'
+b[3].under ='<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=年收入超过十万的企业"><font color=#006633>年收入超过十万的企业</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=钳工前景如何"><font color=#006633>钳工前景如何</font></a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=技术工人和研究生收入比较"><font color=#006633>技术工人和研究生收入比较</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=中国收最高的十个工种"><font color=#006633>中国收最高的十个工种</font></a>'
+b[4].under ='<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=IT业收如何"><font color=#006633>IT业收如何</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=注册会计师收入调查"><font color=#006633>注册会计师收入调查</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=通讯行业待遇"><font color=#006633>通讯行业待遇探秘</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=收入与劳动量有关系吗"><font color=#006633>收入与劳动量有关系吗</font></a>'
+b[5].under ='<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=东西部收差距"><font color=#006633>东西部收差距</font></a>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=网络兼职可靠吗"><font color=#006633>网络兼职可靠吗</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=能快速赚钱的行业"><font color=#006633>能快速赚钱的行业</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.baidu.com/s?tn=ggang6_pg&ct=&lm=&z=&rn=&word=排名前十位的职位"><font color=#006633>排名前十位的职位</font></a>'
+var visa = "";
+document.write(b[talet].under); 
+//-->

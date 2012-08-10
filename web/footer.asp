@@ -1,0 +1,2 @@
+<div class="grid_12" style="margin-bottom:20px; border-bottom-width: 1px;border-bottom-style: solid;height: 80px;;border-bottom-color: #CCCCCC;"></div>
+<div class="grid_12" style="min-height: 100px;text-align: center"> &copy; 2012 <%=webname%> </div>
