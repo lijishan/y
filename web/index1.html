@@ -14,14 +14,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="scripts/ie6.css" />
     <![endif]-->
 
-    <style type="text/css" media="screen"></style>
-
     <link rel="stylesheet" href="scripts/jqueryui/css/custom-theme/jquery-ui-1.8.22.custom.css" />
-    <script src="scripts/ui/jquery-1.7.2.min.js"></script>
-    <script src="scripts/ui/jquery.ui.core.js"></script>
-    <script src="scripts/ui/jquery.ui.widget.js"></script>
-    <script src="scripts/ui/jquery.ui.tabs.js"></script>
-
+    <script src="scripts/jqueryui/js/jquery-1.7.2.min.js"></script>
+    <script src="scripts/jqueryui/js/jquery-ui-1.8.22.custom.min.js"></script>
 
     <!-- syndication //-->
     <!-- favicon //-->
@@ -47,33 +42,16 @@
     </div>
     <div class="grid_12" style="height:10px;"></div>
     <div class="clear"></div>
-
-    <meta charset="utf-8">
-
-
-
-
-
-
-
-    <script>
-        $(function() {
-            $( "#tabs" ).tabs({
-                event: "mouseover"
-            });
-        });
-    </script>
-
     <div class="grid_12" id="featured-articles1">
         <div class="grid_3 alpha" id="slide">
             <img src="http://news.baidu.com/z/resource/r/image/2012-08-07/c56318522128ecff111288b6193ed7f5.jpg"/>
         </div>
         <div class="grid_6" id="news">
-            <div id="tabs">
+            <div id="tabs1">
                 <ul>
-                    <li><a href="#tabs-1">最新动态</a></li>
-                    <li><a href="#tabs-2">Proin dolor</a></li>
-                    <li><a href="#tabs-3">Aenean lacinia</a></li>
+                    <li><a href="#tabs-1">就业服务</a></li>
+                    <li><a href="#tabs-2">人才交流</a></li>
+                    <li><a href="#tabs-3">人社部门</a></li>
                 </ul>
                 <div id="tabs-1">
                     <ul>
@@ -83,7 +61,6 @@
                         <li>广西钦州市钦南区2012年拟招聘特岗教师公示</li>
                         <li>烟台市高校毕业生招聘会将于8月9日举行</li>
                     </ul>
-
                 </div>
                 <div id="tabs-2">
                     <ul>
@@ -107,12 +84,14 @@
             </div>
         </div>
         <div class="grid_3 omega" id="info">
-            <ul>
-                <li class="section-header">近期招聘会</li>
-                <li>世界500强招聘会</li>
-                <li>知名物流企业专场</li>
-                <li>应届毕业生专场</li>
-            </ul>
+            <div class="ui-widget-content">
+                <h4 class="section-header">近期招聘会</h4>
+                <ul>
+                    <li>世界500强招聘会</li>
+                    <li>知名物流企业专场</li>
+                    <li>应届毕业生专场</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="clear"></div>
@@ -167,4 +146,14 @@
     </div>
 
 </div>
+<script>
+	$(function() {
+		$( "#tabs1" ).tabs({
+                event: "mouseover"
+            });
+	});
+    $(function() {
+        //$( "#tabs2" ).tabs();
+    });
+</script>
 </body></html>
