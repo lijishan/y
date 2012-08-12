@@ -1,8 +1,9 @@
 <!--#include file="auth.asp"-->
 <!--#include file="conn.asp"-->
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
 <%
 op = trim(request("op"))
-if op<>"add" && op<>"mod" then
+if op<>"add" and op<>"mod" then
     response.write "<script language=JavaScript>" & chr(13) & "alert('无效请求');" & "history.back()" & "</script>"
     Response.End
 end if

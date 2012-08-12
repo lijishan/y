@@ -1,15 +1,4 @@
-<!--#include file="info.asp"-->
-<!--#include file="conn.asp"-->
-<html>
-<head>
-<meta http-equiv="Content-Language" content="zh-cn">
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<link rel="stylesheet" href="css.css"  type="text/css">
-<title>新闻动态 -<%=webname%></title>
-</head>
-
-<body>
-<!--#include file="top_index.asp"-->
+<!--#include file="header.asp"-->
 <div align="center">
 	<table border="0" width="760" cellspacing="0" cellpadding="0" id="table1" height="206">
 		<tr>
@@ -72,7 +61,7 @@
 											<table border="0" width="94%" cellspacing="0" cellpadding="0" id="table13" height="25">
 <%
 set rs1=server.createobject("adodb.recordset")
-sql="select top 10 id,title from article where class=1 order by click desc"
+sql="select top 10 id,title from article where class="&request("class")&" order by click desc"
 rs1.open sql,conn,1,1
 if rs1.eof or rs1.bof then
            response.write "暂无文章！"
@@ -122,7 +111,7 @@ end if
 									<td style="border-bottom:1px solid #C0C0C0; border-left:1px solid #C0C0C0; border-right:1px solid #C0C0C0; border-top-width: 1px" valign="top" align="center">
 									<table border="0" width="96%" cellspacing="0" cellpadding="0" id="table16" height="20">
 										<%
-sql="select * from article where class=1 order by id desc"
+sql="select * from article where class="&request("class")&" order by id desc"
 rs.open sql,conn,1,1
 if rs.recordcount=0 then
 rs.close

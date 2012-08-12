@@ -1,49 +1,10 @@
-<!--#include file="info.asp"-->
-<!--#include file="index_info.asp"-->
-<!--#include file="conn.asp"-->
-<!--#include file="unhtml.asp"-->
+<!--#include file="header.asp"-->
 
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"><head profile="http://gmpg.org/xfn/11">
-    <title><%=webname%></title>
-    <meta http-equiv="content-type" content="text/html; charset=GBK">
-    <meta name="robots" content="all">
-    <link rel="stylesheet" type="text/css" media="screen" href="scripts/style.css">
-    <!--[if IE 6]>
-    <link rel="stylesheet" type="text/css" media="screen" href="scripts/ie6.css" />
-    <![endif]-->
-    <style type="text/css" media="screen"></style>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<%
+    dim array_news
+%>
 
-    <link rel="stylesheet" href="scripts/jqueryui/css/custom-theme/jquery-ui-1.8.22.custom.css" />
-    <link rel="stylesheet" href="scripts/slides/carouse.css" />
-    <script src="scripts/slides/s"></script>
-    <script src="scripts/jqueryui/js/jquery-1.7.2.min.js"></script>
-    <script src="scripts/jqueryui/js/jquery-ui-1.8.22.custom.min.js"></script>
-
-</head>
-<body>
-<div class="container_12" id="wrapper">
-    <div class="grid_12" id="navigation">
-        <h1><a href="/" title="" rel="noreferrer">
-            <!--<img src="images/logo.jpg" alt="">-->
-            <embed src="images/banner.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent" width="940" height="120" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="always"></embed>
-        </a></h1>
-    </div>
-    <div class="grid_12" id="nav">
-        <span>欢迎光临</span>
-        <ul>
-            <li><a href="/" title="" rel="noreferrer">主页</a></li>
-            <li><a href="/list.asp?class=1001" title="" rel="noreferrer">就业服务</a></li>
-            <li><a href="/list.asp?class=1002" title="" rel="noreferrer">人才交流</a></li>
-            <li><a href="/list.asp?class=1003" title="" rel="noreferrer">企业园地</a></li>
-            <li><a href="/list.asp?class=1004" title="" rel="noreferrer">企业招聘平台</a></li>
-            <li><a href="/list.asp?class=1005" title="" rel="noreferrer">校企合作</a></li>
-            <li><a href="/list.asp?class=1006" title="" rel="noreferrer">人才求职意向</a></li>
-            <li><a href="/" title="" rel="noreferrer">会员中心</a></li>
-        </ul>
-    </div>
     <div class="grid_12" style="height:10px;"></div>
-    <div class="clear"></div>
     <div class="grid_12" id="featured-articles">
         <div class="grid_4 alpha" id="slide">
             <div><img src="/images/editorimages/20120811-1.jpg"/></div>
@@ -58,166 +19,315 @@
                 </ul>
                 <div id="tabs-1">
                     <ul>
-                        <%
+                    <%
+                        article_num = 10
+                        class_id = 1001
+                    %>
+                    <!--#include file="index_info.asp"-->
+                    <%
+                    if (ubound(array_news) > 0) then
                         for i1=0 to ubound(array_news, 2)
-                        id = array_news(0, i1)
-                        title = array_news(1, i1)
-                        pub_time = array_news(2, i1)
-                        class_id = array_news(3, i1)
+                            id = array_news(0, i1)
+                            title = array_news(1, i1)
+                            pub_time = array_news(2, i1)
+                            class_id = array_news(3, i1)
                         %>
-                        <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
-                        <%
+                            <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
+                    <%
                         next
-                        %>
+                    %>
+                            <li class="news-item"><span><a href="list.asp?class=<%=class_id%>">更多&gt;&gt;</a></span></li>
+                    <%
+                    else
+                    %>
+                        <li class="news-item"> 暂无信息 </li>
+                    <%
+                    End if
+                    %>
                     </ul>
                 </div>
                 <div id="tabs-2">
                     <ul>
-                        <%
+                    <%
+                        article_num = 10
+                        class_id = 1002
+                    %>
+                    <!--#include file="index_info.asp"-->
+                    <%
+                    if (ubound(array_news) > 0) then
                         for i1=0 to ubound(array_news, 2)
-                        id = array_news(0, i1)
-                        title = array_news(1, i1)
-                        pub_time = array_news(2, i1)
-                        class_id = array_news(3, i1)
+                            id = array_news(0, i1)
+                            title = array_news(1, i1)
+                            pub_time = array_news(2, i1)
+                            class_id = array_news(3, i1)
                         %>
-                        <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
-                        <%
+                            <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
+                    <%
                         next
-                        %>
+                    %>
+                            <li class="news-item"><span><a href="list.asp?class=<%=class_id%>">更多&gt;&gt;</a></span></li>
+                    <%
+                    else
+                    %>
+                        <li class="news-item"> 暂无信息 </li>
+                    <%
+                    End if
+                    %>
                     </ul>
                 </div>
                 <div id="tabs-3">
                     <ul>
-                        <%
+                    <%
+                        article_num = 10
+                        class_id = 1010
+                    %>
+                    <!--#include file="index_info.asp"-->
+                    <%
+                    if (ubound(array_news) > 0) then
                         for i1=0 to ubound(array_news, 2)
-                        id = array_news(0, i1)
-                        title = array_news(1, i1)
-                        pub_time = array_news(2, i1)
-                        class_id = array_news(3, i1)
+                            id = array_news(0, i1)
+                            title = array_news(1, i1)
+                            pub_time = array_news(2, i1)
+                            class_id = array_news(3, i1)
                         %>
-                        <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
-                        <%
+                            <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
+                    <%
                         next
-                        %>
+                    %>
+                            <li class="news-item"><span><a href="list.asp?class=<%=class_id%>">更多&gt;&gt;</a></span></li>
+                    <%
+                    else
+                    %>
+                        <li class="news-item"> 暂无信息 </li>
+                    <%
+                    End if
+                    %>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="grid_3 omega" id="info">
             <div class=" news-widget1 info-widget">
-                <h4 class="section-header header">近期招聘会 <span><a href="#" >更多&gt;&gt;</a></span></h4>
+                <%
+                    article_num = 10
+                    class_id = 1009
+                %>
+                <h4 class="section-header header">近期招聘会 <span><a href="list.asp?class=<%=class_id%>">更多&gt;&gt;</a></span></h4>
                 <ul>
+                    <!--#include file="index_info.asp"-->
                     <%
-                    for i1=0 to ubound(array_recru, 2)
-                    id = array_recru(0, i1)
-                    title = array_recru(1, i1)
-                    pub_time = array_recru(2, i1)
-                    class_id = array_recru(3, i1)
-                    %>
-                    <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a></li>
+                    if (ubound(array_news) > 0) then
+                        for i1=0 to ubound(array_news, 2)
+                            id = array_news(0, i1)
+                            title = array_news(1, i1)
+                            pub_time = array_news(2, i1)
+                            class_id = array_news(3, i1)
+                        %>
+                            <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a></li>
                     <%
-                    next
+                        next
+                    else
                     %>
+                        <li class="news-item"> 暂无信息 </li>
+                    <%
+                    End if
+                    %>
+                    </ul>
                 </ul>
             </div>
         </div>
     </div>
     <div class="clear"></div>
+    <div class="grid_12" style="height:10px;"></div>
     <div class="grid_12" style="overflow:hidden">
         <embed src="/images/adbanner.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent" width="940" height="120" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="always"></embed>
     </div>
     <div class="clear"></div>
-    <div class="grid_12" style="height:10px;">
-    </div>
-    <div class="grid_12" style="height:10px;">
+    <div class="grid_12" style="height:10px;"></div>
+    <div class="grid_12">
         <div class="grid_6 alpha" id="news3">
             <div class=" news-widget1 info-widget">
-                <h4 class="section-header header">玉州概况<span><a href="" >更多&gt;&gt;</a></span></h4>
+                <%
+                    article_num = 10
+                    class_id = 1030
+                %>
+                <h4 class="section-header header">玉州概况<span><a href="list.asp?class=<%=class_id%>">更多&gt;&gt;</a></span></h4>
                 <ul>
-                        <%
+                    <!--#include file="index_info.asp"-->
+                    <%
+                    if (ubound(array_news) > 0) then
                         for i1=0 to ubound(array_news, 2)
-                        id = array_news(0, i1)
-                        title = array_news(1, i1)
-                        pub_time = array_news(2, i1)
-                        class_id = array_news(3, i1)
+                            id = array_news(0, i1)
+                            title = array_news(1, i1)
+                            pub_time = array_news(2, i1)
+                            class_id = array_news(3, i1)
                         %>
-                        <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
-                        <%
+                            <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
+                    <%
                         next
-                        %>
+                    else
+                    %>
+                        <li class="news-item"> 暂无信息 </li>
+                    <%
+                    End if
+                    %>
                 </ul>
             </div>
         </div>
         <div class="grid_6 omega" id="news4">
             <div class=" news-widget1 info-widget">
-                <h4 class="section-header header">机构设置<span><a href="" >更多&gt;&gt;</a></span></h4>
+                <%
+                   article_num = 10
+                   class_id = 1031
+                %>
+                <h4 class="section-header header">机构设置<span><a href="list.asp?class=<%=class_id%>">更多&gt;&gt;</a></span></h4>
                 <ul>
-                        <%
+                    <!--#include file="index_info.asp"-->
+                    <%
+                    if (ubound(array_news) > 0) then
                         for i1=0 to ubound(array_news, 2)
-                        id = array_news(0, i1)
-                        title = array_news(1, i1)
-                        pub_time = array_news(2, i1)
-                        class_id = array_news(3, i1)
+                            id = array_news(0, i1)
+                            title = array_news(1, i1)
+                            pub_time = array_news(2, i1)
+                            class_id = array_news(3, i1)
                         %>
-                        <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
-                        <%
+                            <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
+                    <%
                         next
-                        %>
+                    else
+                    %>
+                        <li class="news-item"> 暂无信息 </li>
+                    <%
+                    End if
+                    %>
                 </ul>
             </div>
         </div>
+    </div>
+    <div class="grid_12" style="height:10px;"></div>
+    <div class="grid_12" style="overflow:hidden">
+            <embed src="/images/adbanner.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent" width="940" height="120" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="always"></embed>
+    </div>
+    <div class="grid_12" style="height:10px;"></div>
+    <!-- 会员中心 -->
+    <div class="grid_12" style="overflow:hidden">
+            <!--登录与搜索-->
+            <div class="grid_4 alpha" style="overflow:hidden">
+                <div class="grid_4 alpha omega" style="overflow:hidden">
+                    <div class="search_box">
+                        <h4 class="section-header header">会员登录</h4>
+                        <div>
+                    <%
+                        if Request.Cookies("ggval")<>"81528686528" then
+                        Response.Cookies("id")=""
+                        Response.Cookies("ac")=""
+                        Response.Cookies("user")=""
+                        end if
+                        if Request.Cookies("id")="" or Request.Cookies("ac")="" or Request.Cookies("user")="" then
+                    %>
+                        <form methond="post" action="/login.asp" onSubmit="return test()">
+                            <div class="grid_1 alpha">&nbsp;&nbsp;用户名: </div>
+                            <div class='grid_3 alpha omega'><input type='text' size='28' name='name'></div>
+                            <div class='grid_1 alpha'>&nbsp;&nbsp;密 码:</div>
+                            <div class='grid_3 alpha omega'><input type='password' size='28' name='pwd'></div>
+                            <div class='grid_1 alpha'>&nbsp;&nbsp;验证码:</div>
+                            <div class='grid_3 alpha omega'><input type='text' size='14' name='code'><%call getcode()%></div>
+                            <div class='grid_1 alpha'>&nbsp;&nbsp;会员类型</div>
+                            <div class='grid_3  alpha omega'>
+                                <select size="1" name="user">
+									<option selected value="0">-请选择会员类别-</option>
+										<option value="1" selected>个人用户</option>
+										<option value="2">企业用户</option>
+									</select>
+							</div>
+                            <div class='grid_2 alpha omega' style="alignt:center">&nbsp;&nbsp;<input type='submit' size='10' value='登录'></div>
+                            <div class='grid_2 alpha omega' style="alignt:center">&nbsp;<input type='submit' size='10' value='忘记密码'></div>
+                        </form>
+                    <%
+                        else
+                        sql="select id from message where ttype='"&Request.Cookies("user")&"' and tid="&Request.Cookies("id")&" and new=true"
+                        rs.open sql,conn,1,1
+                        msg_count = rs.recordCount
+                        rs.close
+                    %>
+                            <div class="grid_3">
+                                欢迎<%
+                                        if Request.Cookies("user")="1" then response.write"个人用户"
+                                        if Request.Cookies("user")="2" then response.write"企业用户"
+                                    %>
+                                <span style="font-weight:bold;color:red;"><%=Request.Cookies("name")%></span>
+                            </div><br/><br/>
+                            <div class="grid_3">
+                                <ul>
+                                    <li style='font-size:13pt;'><a href="control.asp">进入会员中心&gt;&gt;</a></li>
+                                    <li style='font-size:13pt;'><a href="message.asp">消息管理</a></b> (<font color="#FF0000"><%=msg_count%></font>条新信息)</li>
+                                    <li>&nbsp;</li>
+                                    <li style='font-size:13pt;'><a href="exit.asp">退出登陆</a></li>
+                                </ul>
 
-        <div class="grid_12" id="featured-articles">
-            <div class="grid_9 alpha">
-                <div class="grid_9 alpha omega">
-                    <ul>
-                        <li class="section-header">最新职位</li>
-                    </ul>
-                    <table width="100%">
-                        <tr>
-                            <td width="20%">发布时间</td>
-                            <td width="30%">招聘职位</td>
-                            <td width="25%">工作地</td>
-                            <td width="30%">学历要求</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                            </div>
+                    <%
+                        end if
+                    %>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid_9 alpha omega" style="height:200px;">
-                    <ul>
-                        <li class="section-header">人才信息</li>
-                    </ul>
+                <div class="grid_4 alpha omega" style="height:10px;"></div>
+                <div class="grid_4 alpha omega" style="overflow:hidden">
+                    <div class="search_box">
+                        <h4 class="section-header header">职位搜索</h4>
+                    </div>
                 </div>
-                <div class="grid_9" style="overflow:hidden"><img src="http://i0.sinaimg.cn/ty/2011hqj/aoyun/olympic_london_home_banner.jpg" /></div>
             </div>
+            <!-- 热门职位 -->
+            <div class="grid_5" style="overflow:hidden">
+            </div>
+            <!-- 人才推荐 -->
+            <div class="grid_3 omega" style="overflow:hidden">
+            </div>
+    </div>
 
-            <div class="grid_3 omega sidebar">
-                企业园地
-                <ul>
-                    <li class="section-header"></li>
-                    <li><img src="images/gonghang.gif" /></li>
-                    <li><img src="images/jianhang.gif" /></li>
-                    <li><img src="images/gonghang.gif" /></li>
-                    <li><img src="images/gonghang.gif" /></li>
-                </ul>
-            </div>
-        </div>
-        <!--#include file="footer.asp"-->
-        <script>
+    <script>
             $(function() {
                 $( "#tabs1" ).tabs({
                     event: "mouseover"
                 });
             });
-            $(function() {
-                //$( "#tabs2" ).tabs();
-            });
-        </script>
-    </div>
-    <div style="display:none">
+    </script>
+    <!--#include file="footer.asp"-->
+</div>
+<script language=javascript>
+  function test()
+  {
+      if (document.form1.name.value==""){
+	      alert("请输入用户名！")
+		  document.form1.name.focus();
+		  return false
+		    }
+	  if (document.form1.pwd.value==""){
+	      alert("请输入密码！");
+		  document.form1.pwd.focus();
+		  return false
+		  }
+		  if (document.form1.code.value==""){
+	      alert("请输入验证码！");
+		  document.form1.code.focus();
+		  return false
+		  }
+		   if (document.form1.user.value=="0"){
+	      alert("请选择会员类别！");
+		  document.form1.user.focus();
+		  return false
+		  }
+		  return true
+  }
+  function reset_form()
+  {
+   document.form1.name.value="";
+   document.form1.pwd.value="";
+   document.form1.user.value="";
+   document.form1.name.focus;
+  }
+</script>
+    <!--#include file="footer_hide_ad.asp"-->
 </body></html>

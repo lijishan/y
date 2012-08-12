@@ -4,6 +4,12 @@
 <meta http-equiv="content-type" content="text/html; charset=GBK" />
 
 <%
+if (request("name") = "") then
+    response.write "<script language=JavaScript>history.back()</script>"
+    response.end
+end if
+%>
+<%
 if instr(request("name"),"'")<>0 then
 response.write "<script language=JavaScript>" & chr(13) & "alert('非法数据提交！');" & "history.back()" & "</script>" 
 Response.End
@@ -40,9 +46,7 @@ set conn=nothing
 response.write "<script language=JavaScript>" & chr(13) & "alert('此帐号已被锁定，请与管理员联系！');"&"window.location.href = 'index.asp'"&" </script>"
 response.end
 end if
-set rs1=server.createobject("adodb.recordset")
-rs1.open sql1,conn,1,1
-set rs1=nothing
+
 if rs("name")<>"" then Response.Cookies("name")=rs("name")
 Response.Cookies("vip")=LCase(rs("vip"))
 Response.Cookies("id")=rs("id")
