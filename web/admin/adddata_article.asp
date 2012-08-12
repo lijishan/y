@@ -13,9 +13,9 @@ if trim(request("content"))="" then
 	Response.End
 end if
 
-mydate="1"
+mydate=now()
 
-sql="insert into article (title,content,addtime,comefrom,class) values('"&request("title")&"','"&request("content")&"',1,'"&request("comefrom")&"','"&request("class")&"')"
+sql="insert into article (title,content,addtime,comefrom,class) values('"&request("title")&"','"&request("content")&"','"&mydate&"','"&request("comefrom")&"','"&request("class")&"')"
 'response.write sql
 'response.end
 

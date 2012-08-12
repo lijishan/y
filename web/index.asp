@@ -214,7 +214,7 @@
             <!--登录与搜索-->
             <div class="grid_4 alpha" style="overflow:hidden">
                 <div class="grid_4 alpha omega" style="overflow:hidden">
-                    <div class="search_box">
+                    <div class="search_box" style="height:180px">
                         <h4 class="section-header header">会员登录</h4>
                         <div>
                     <%
@@ -262,7 +262,7 @@
                                     <li style='font-size:13pt;'><a href="control.asp">进入会员中心&gt;&gt;</a></li>
                                     <li style='font-size:13pt;'><a href="message.asp">消息管理</a></b> (<font color="#FF0000"><%=msg_count%></font>条新信息)</li>
                                     <li>&nbsp;</li>
-                                    <li style='font-size:13pt;'><a href="exit.asp">退出登陆</a></li>
+                                    <li style='font-size:13pt;'><a href="exit.asp">退出登录</a></li>
                                 </ul>
 
                             </div>
@@ -274,17 +274,166 @@
                 </div>
                 <div class="grid_4 alpha omega" style="height:10px;"></div>
                 <div class="grid_4 alpha omega" style="overflow:hidden">
-                    <div class="search_box">
+                    <div class="search_box"style="height:265px">
                         <h4 class="section-header header">职位搜索</h4>
+<!--搜索框开始-->
+<table>
+<TR vAlign=top align=middle>
+                        <TD align=middle colSpan=2><table border="0" width="100%" cellspacing="0" cellpadding="0" height="25" id="table11">
+							<form method="POST" action="search.asp" TARGET="_blank">
+								<tr>
+										<td height="30">
+										<p align="left">
+<SELECT SIZE=1 NAME=gzdd STYLE="border-style: solid; border-width: 1; padding-left: 4; padding-right: 4; padding-top: 1; padding-bottom: 1; background-color: #FFFFFF">
+<OPTION value="0">请选择工作省份</OPTION>
+<OPTION VALUE=北京市>北京市</OPTION><OPTION VALUE=上海市>上海市</OPTION><OPTION VALUE=天津市>天津市</OPTION><OPTION VALUE=重庆市>重庆市</OPTION><OPTION VALUE=河北省>河北省</OPTION><OPTION VALUE=河南省>河南省</OPTION><OPTION VALUE=海南省>海南省</OPTION><OPTION VALUE=西昌市>西昌市</OPTION><OPTION VALUE=福建省>福建省</OPTION><OPTION VALUE=甘肃省>甘肃省</OPTION><OPTION VALUE=广东省>广东省</OPTION><OPTION VALUE=广西省>广西省</OPTION><OPTION VALUE=四川省>四川省</OPTION><OPTION VALUE=贵州省>贵州省</OPTION><OPTION VALUE=湖北省>湖北省</OPTION><OPTION VALUE=湖南省>湖南省</OPTION><OPTION VALUE=吉林省>吉林省</OPTION><OPTION VALUE=江苏省>江苏省</OPTION><OPTION VALUE=江西省>江西省</OPTION><OPTION VALUE=辽宁省>辽宁省</OPTION><OPTION VALUE=青海省>青海省</OPTION><OPTION VALUE=山东省>山东省</OPTION><OPTION VALUE=山西省>山西省</OPTION><OPTION VALUE=陕西省>陕西省</OPTION><OPTION VALUE=云南省>云南省</OPTION><OPTION VALUE=浙江省>浙江省</OPTION><OPTION VALUE=黑龙江省>黑龙江省</OPTION><OPTION VALUE=宁夏自治区>宁夏自治区</OPTION><OPTION VALUE=新疆自治区>新疆自治区</OPTION><OPTION VALUE=西藏自治区>西藏自治区</OPTION><OPTION VALUE=内蒙古自治区>内蒙古自治区</OPTION><OPTION VALUE=香港特别行政区>香港特别行政区</OPTION><OPTION VALUE=澳门特别行政区>澳门特别行政区</OPTION><OPTION VALUE=台湾省>台湾省</OPTION><OPTION VALUE=国外地区>国外地区</OPTION>
+</SELECT></td>
+							  </tr>
+									<tr>
+										<td height="30">
+										<p align="left">
+												<SELECT SIZE="1" NAME="job" STYLE="border: 1px solid #333333; padding-left: 4; padding-right: 4; padding-top: 1; padding-bottom: 1; background-color: #FFFFFF">
+<OPTION VALUE="0">::请选择职位类别::</OPTION>
+<OPTION VALUE=经营/管理类>经营/管理类</OPTION><OPTION VALUE=财务类>财务类</OPTION><OPTION VALUE=销售/业务类>销售/业务类</OPTION><OPTION VALUE=市场类>市场类</OPTION><OPTION VALUE=设计类>设计类</OPTION><OPTION VALUE=客户服务类>客户服务类</OPTION><OPTION VALUE=行政/人事类>行政/人事类</OPTION><OPTION VALUE=IT网络/计算机专业人员>IT网络/计算机专业人员</OPTION><OPTION VALUE=文职类>文职类</OPTION><OPTION VALUE=工业/工厂类>工业/工厂类</OPTION><OPTION VALUE=后勤/服务类>后勤/服务类</OPTION><OPTION VALUE=卫生医疗/美容保健类>卫生医疗/美容保健类</OPTION><OPTION VALUE=食品、餐饮/旅游/休闲娱乐>食品、餐饮/旅游/休闲娱乐</OPTION><OPTION VALUE=电子/通讯类专业人员>电子/通讯类专业人员</OPTION><OPTION VALUE=机械专业人员>机械专业人员</OPTION><OPTION VALUE=房地产/建筑专业人员>房地产/建筑专业人员</OPTION><OPTION VALUE=金融/经济专业人员>金融/经济专业人员</OPTION><OPTION VALUE=文教体卫/法律专业人员>文教体卫/法律专业人员</OPTION><OPTION VALUE=服务业专业人员>服务业专业人员</OPTION><OPTION VALUE=其它专业人员>其它专业人员</OPTION>
+</SELECT></td>
+									</tr>
+									<tr>
+										<td height="30">
+<input onFocus="this.value=''" type="text" name="what" size="20" style="padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" value="请输入职位关键字"></td>
+									</tr>
+									<tr>
+										<td height="30">
+<SELECT ID=create_date NAME=date size="1">
+<option selected value="不限">请选择发布时间</option>
+<OPTION VALUE="不限">不限</OPTION> <OPTION VALUE="7">一星期内</OPTION>
+<OPTION VALUE="30">一个月内</OPTION> <OPTION VALUE="183">六个月内</OPTION>
+<OPTION VALUE="365">一年内</OPTION> </SELECT></td>
+									</tr>
+									<tr>
+										<td height="30">
+										<% if Request.Cookies("user")="1" then %>
+										<input type="radio" value="1" checked name="class">职位&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="class" value="2">人才</td>
+										<%else%>
+										<input type="radio" value="1"  name="class">职位&nbsp;&nbsp;&nbsp;
+										<input type="radio" checked name="class" value="2">人才</td>
+										<%end if %>
+									</tr>
+									<tr>
+										<td height="30">
+										<p align="left">
+										<% if Request.Cookies("id")<>"" or Request.Cookies("ac")<>"" or Request.Cookies("user")<>"" then %>
+										<input border="0" src="images/s2.gif" name="I1" width="53" height="20" type="image">&nbsp;&nbsp;&nbsp;&nbsp;
+										<a href="super_search.asp">
+										<img border="0" src="images/s1.gif" width="79" height="20"></a>
+										<%else
+response.write "<font color=#FF0000>登录后才可搜索</font>"
+end if %></td>
+									</tr>
+							</form>
+								</table></TD>
+                      </TR>
+</table>
+
+<!--搜索框结束-->
                     </div>
                 </div>
             </div>
             <!-- 热门职位 -->
             <div class="grid_5" style="overflow:hidden">
+                <div class="info-widget " style="height:458px">
+                    <h4 class="section-header header">热门职位<span><a href="grqz1.asp">更多&gt;&gt;</a></span></h4>
+                    <!--#include file="ad_syad1.asp"-->
+                </div>
             </div>
             <!-- 人才推荐 -->
             <div class="grid_3 omega" style="overflow:hidden">
+                <div class="search_box" style="height:458px">
+                    <h4 class="section-header header">人才推荐</h4>
+<%
+sql="select top "&index4&" id,name,job1,gzdd,edu,sex,rdate,zhuanyen1,gzcs from in_user where lock=false and name<>''  order by rdate desc"
+rs.open sql,conn,1,1
+if rs.recordcount=0 then
+    rs.close
+    response.write "暂时没有注册用户！"
+else
+%>
+    <%
+    for ii=1 to index4
+    %>
+    <li class='news-item'>
+        <a target =_blank href="person.asp?id=<%=rs("id")%>"><strong><%=rs("name")%></strong></a>
+        [<%=rs("sex")%>]
+        [<%=rs("edu")%>]
+        <%=rs("zhuanyen1")%>
+        <%=rs("gzdd")%>&nbsp;<%=rs("gzcs")%>
+    </li>
+    <%
+    rs.movenext
+    if rs.eof then exit for
+    next
+    rs.close
+end if
+%>
+
+                </div>
             </div>
+    </div>
+    <div class="grid_12" style="height:10px;"></div>
+    <!--热门招聘 -->
+    <div class="grid_12">
+        <div class="grid_9 alpha">
+            <div class='info-widget search_box' style="height:200px">
+                <h4 class="section-header header" style='margin-bottom:0px;'>热门招聘</h4>
+                <!--#include file="ad_syad2.asp"-->
+            </div>
+        </div>
+        <div class="grid_3 omega">
+            <div class='info-widget' style="height:200px">
+                <h4 class="section-header header">委托招聘<span>更多&gt;&gt;</span></h4>
+                <ul style='margin-left:5px;'>
+                <%
+                sql="select top "&index6&" id,jtzw,edus,sexs from consigns  order by addtime desc"
+                rs.open sql,conn,1,1
+                if rs.eof or rs.bof then
+                           response.write "<li>暂无信息！</li>"
+                           rs.close
+                           else
+                           for i1=1 to index6
+                %>
+                <li><span style="color:red;font-weight:bold;height:15px;font-size:14pt;">聘</span><a title ="<%=rs("jtzw")%>" target =_blank href="show_consign.asp?id=<%=rs("id")%>">
+                <%=rs("jtzw")%></a>  性别:<%=rs("sexs")%> 学历:<%=rs("edus")%></li>
+                <%
+                rs.movenext
+                if rs.eof then exit for
+                next
+                rs.close
+                end if
+                %>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="grid_12" style="height:10px;"></div>
+    <!--名企招聘 -->
+    <div class="grid_12">
+        <div class="grid_12 alpha omega info-widget" style="min-height:200px">
+            <h4 class="section-header header">名企招聘</h4>
+            <ul>
+                          <%
+sql="select top "&index2&" en_user.name,en_user.rdate,en_user.area,en_user.id from en_user where name<>'' order by en_user.id desc"
+rs.open sql,conn,1,1
+%>
+                          <%for ii=1 to index2 %>
+						  <li class="news-item"><a target =_blank title=" 〖<%=rs("area")%>〗" href="company.asp?id=<%=rs("id")%>" class="STYLE11"><%=rs("name")%>（<%=rs("area")%>）</a></li>
+                                                  <%
+rs.movenext
+if rs.eof then exit for
+next
+rs.close
+%>
+            </ul>
+        </div>
     </div>
 
     <script>

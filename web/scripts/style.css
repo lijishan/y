@@ -452,8 +452,8 @@ a {
 }
 .news-item a:hover{color:#FF001D;border-bottom: 1px dotted #FF001D;}
 
-h4.header{
-    background-color: #6600CC;
+.box_header{
+    /*background-color: #6600CC;*/
     background-image: url(../images/line.gif);
     background-position: -39px 0px;
 }
