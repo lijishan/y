@@ -218,8 +218,14 @@
         </div>
     </div>
     <div class="grid_12" style="height:10px;"></div>
-    <div class="grid_12" style="overflow:hidden">
-            <embed src="/images/adbanner.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent" width="940" height="120" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="always"></embed>
+    <div class="grid_12" style='height:120px;overflow:hidden'>
+     	<div id="tour_marquee">
+            <img src="images/tour1.jpg" height="125" title="大容山森林公园"/>
+            <img src="images/tour2.jpg" height="125" title="探访云天文化城"/>
+            <img src="images/tour3.jpg" height="125" title="真武阁"/>
+            <img src="images/tour4.jpg" height="125" title="美丽的罗政村"/>
+            <img src="images/tour5.jpg" height="125" title="望君山：生态美景"/>
+      	</div>
     </div>
     <div class="grid_12" style="height:10px;"></div>
     <!-- 会员中心 -->

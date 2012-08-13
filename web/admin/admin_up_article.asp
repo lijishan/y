@@ -814,7 +814,7 @@ function glow() {
         rs.open sql,conn,1,1
         for i=1 to rs.recordCount
             selected = "selected"
-            if cint(rs("cid")) <> article_class then
+            if (rs("cid") <> cstr(article_class)) then
                 selected = ""
             end if
     %>
