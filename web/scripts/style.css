@@ -409,6 +409,13 @@ a.navbar:link {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.weather_box {
+    background-color: #F5F8FD;
+    min-height: 34px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C8D8F2;
+}
 .search_box {
     background-color: #F5F8FD;
     min-height: 180px;

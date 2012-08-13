@@ -26,7 +26,12 @@
 		</a></h1>
 	</div>
 	<div class="grid_12" id="nav">
-		<span>欢迎光临</span>
+		<span id='date_span' style='margin-top:3px'>
+			<script language="javascript">
+                d = new Date();
+                document.write(d.getFullYear()+"年"+(d.getMonth()+1)+"月"+d.getDate()+"日");
+            </script>
+		</span>
 		<ul>
 			<li><a href="/" title="" rel="noreferrer">主页</a></li>
 			<li><a href="/list.asp?class=1001" title="" rel="noreferrer">就业服务</a></li>

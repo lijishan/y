@@ -7,7 +7,7 @@
     <div class="grid_12" style="height:10px;"></div>
     <div class="grid_12" id="featured-articles">
         <div class="grid_4 alpha" id="slide">
-            <div><img src="/images/editorimages/20120811-1.jpg"/></div>
+            <div><img src="/images/editorimages/20120811-1.jpg" height="300px"/></div>
             <div class="img-caption grid_4 alpha omega" align="center">玉州区积极部署 严防“海葵”</div>
         </div>
         <div class="grid_5 news-widget1" id="news">
@@ -138,6 +138,19 @@
         </div>
     </div>
     <div class="clear"></div>
+    <div class="grid_12" style="height:10px;"></div>
+    <!-- search bar -->
+    <div class="grid_12">
+        <div class='weather_box' style='height:36px'>
+            <div class="grid_4 alpha" style='padding:8px'>
+                <iframe name="weather_inc" src="http://cache.xixik.com.cn/11/guangxiyulin/" width="300" height="15" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+            </div>
+            <div class="grid_7 omega"  style='padding:4px;float:right;text-align:right'>
+            <input onFocus="this.value=''" type="text" name="what" size="40" style="padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" value="请输入关键字">
+            <input type='button' value='搜职位'> &nbsp; <input type='button' value='搜人才'>
+            </div>
+        </div>
+    </div>
     <div class="grid_12" style="height:10px;"></div>
     <div class="grid_12" style="overflow:hidden">
         <embed src="/images/adbanner.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent" width="940" height="120" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="always"></embed>
