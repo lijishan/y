@@ -26,61 +26,25 @@
       <file leaf-file-name="index.asp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="204" column="62" selection-start="9569" selection-end="9569" vertical-scroll-proportion="0.42461538">
+            <state line="226" column="68" selection-start="10154" selection-end="10154" vertical-scroll-proportion="0.8235294">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="carouse.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/slides/carouse.css">
+      <file leaf-file-name="admin_up_article.asp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/admin_up_article.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="816" column="48" selection-start="28993" selection-end="28993" vertical-scroll-proportion="-0.40677965">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="info_index.asp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/info_index.asp">
+      <file leaf-file-name="header.asp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/header.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_info.asp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index_info.asp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="6" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="212" column="14" selection-start="0" selection-end="9494" vertical-scroll-proportion="-34.551723">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-ui-1.8.22.custom.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/jqueryui/css/custom-theme/jquery-ui-1.8.22.custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="44" selection-start="3493" selection-end="3493" vertical-scroll-proportion="-5.633333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery-ui-1.8.22.custom.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/jqueryui/js/jquery-ui-1.8.22.custom.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="1037" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.0">
+            <state line="28" column="48" selection-start="1448" selection-end="1448" vertical-scroll-proportion="-19.310345">
               <folding />
             </state>
           </provider>
@@ -89,16 +53,25 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="435" column="14" selection-start="27783" selection-end="27783" vertical-scroll-proportion="22.633333">
+            <state line="411" column="12" selection-start="27312" selection-end="27323" vertical-scroll-proportion="31.7">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article1.asp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/article1.asp">
+      <file leaf-file-name="ad_syad2.asp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ad_syad2.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="43" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-15.862069">
+            <state line="25" column="57" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="old.asp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/old.asp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="717" column="0" selection-start="32989" selection-end="33044" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,11 +87,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index1.html" />
-        <option value="$PROJECT_DIR$/1.html" />
         <option value="$PROJECT_DIR$/scripts/jqueryui/css/custom-theme/jquery-ui-1.8.22.custom.css" />
-        <option value="$PROJECT_DIR$/scripts/style.css" />
         <option value="$PROJECT_DIR$/scripts/slides/carouse.css" />
+        <option value="$PROJECT_DIR$/index_info.asp" />
+        <option value="$PROJECT_DIR$/admin/update_category.asp" />
+        <option value="$PROJECT_DIR$/view.asp" />
+        <option value="$PROJECT_DIR$/footer_hide_ad.asp" />
+        <option value="$PROJECT_DIR$/list.asp" />
+        <option value="$PROJECT_DIR$/login.asp" />
+        <option value="$PROJECT_DIR$/admin/adddata_article.asp" />
+        <option value="$PROJECT_DIR$/1.html" />
+        <option value="$PROJECT_DIR$/ad_syad1.asp" />
+        <option value="$PROJECT_DIR$/ad_syad2.asp" />
+        <option value="$PROJECT_DIR$/scripts/style.css" />
+        <option value="$PROJECT_DIR$/header.asp" />
+        <option value="$PROJECT_DIR$/admin/admin_up_article.asp" />
         <option value="$PROJECT_DIR$/index.asp" />
       </list>
     </option>
@@ -149,6 +132,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -192,65 +176,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jqueryui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jqueryui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom-theme" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,6 +216,20 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <method>
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method>
+        <option name="FtpUpload" enabled="false">
+          <server_id />
+          <server_name />
+        </option>
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -314,7 +259,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="866" extended-state="0" />
+    <frame x="-4" y="-4" width="1448" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -323,7 +268,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25139666" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -381,84 +326,92 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/list.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="30" selection-start="0" selection-end="34" vertical-scroll-proportion="-0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="224" selection-end="314" vertical-scroll-proportion="-10.344828" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="22" selection-start="1963" selection-end="1967" vertical-scroll-proportion="-6.965517" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_article.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="1154" selection-end="1171" vertical-scroll-proportion="-4.827586" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/updata_article.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="59" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/adddata_article.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="47" selection-start="531" selection-end="538" vertical-scroll-proportion="-11.724138" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adddata_article.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_add_article.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="448" column="38" selection-start="9763" selection-end="9769" vertical-scroll-proportion="-2.9830508" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conn.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="12" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ad_syad1.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="32" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.4017094" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ad_syad2.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="57" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index1.html">
+    <entry file="file://$PROJECT_DIR$/old.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.896551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="14" selection-start="0" selection-end="9494" vertical-scroll-proportion="-34.551723">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article1.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="43" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-15.862069">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/jqueryui/js/jquery-ui-1.8.22.custom.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1037" selection-start="1197" selection-end="1197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/jqueryui/css/custom-theme/jquery-ui-1.8.22.custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="44" selection-start="3493" selection-end="3493" vertical-scroll-proportion="-5.633333">
+        <state line="717" column="0" selection-start="32989" selection-end="33044" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="435" column="14" selection-start="27783" selection-end="27783" vertical-scroll-proportion="22.633333">
+        <state line="411" column="12" selection-start="27312" selection-end="27323" vertical-scroll-proportion="31.7">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/info_index.asp">
+    <entry file="file://$PROJECT_DIR$/header.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="28" column="48" selection-start="1448" selection-end="1448" vertical-scroll-proportion="-19.310345">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index_info.asp">
+    <entry file="file://$PROJECT_DIR$/admin/admin_up_article.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/slides/carouse.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/slides/slides.min.jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="816" column="48" selection-start="28993" selection-end="28993" vertical-scroll-proportion="-0.40677965">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="62" selection-start="9569" selection-end="9569" vertical-scroll-proportion="0.42461538">
+        <state line="226" column="68" selection-start="10154" selection-end="10154" vertical-scroll-proportion="0.8235294">
           <folding />
         </state>
       </provider>

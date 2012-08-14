@@ -3,3 +3,5 @@
 .*
 */.idea
 web/.idea/*
+.idea
+*.idea
