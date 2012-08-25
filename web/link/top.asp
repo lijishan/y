@@ -60,7 +60,7 @@
                       <TR>
                         <TD width=10></TD>
                         <TD class=top_m align=middle width=46><A class=per_menu 
-                        href="../index.asp">Ê× Ò³</A></TD>
+                        href="../index_bak.asp">Ê× Ò³</A></TD>
                         <TD width=2><IMG height=28 
                         src="../imagen/m_line.gif" 
                       width=2></TD>

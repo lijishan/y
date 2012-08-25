@@ -26,7 +26,7 @@
       <file leaf-file-name="index.asp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="68" selection-start="10154" selection-end="10154" vertical-scroll-proportion="0.8235294">
+            <state line="517" column="0" selection-start="25038" selection-end="25038" vertical-scroll-proportion="0.35211268">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="admin_up_article.asp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/admin_up_article.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="816" column="48" selection-start="28993" selection-end="28993" vertical-scroll-proportion="-0.40677965">
+            <state line="816" column="48" selection-start="28993" selection-end="28993" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="header.asp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.asp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="48" selection-start="1448" selection-end="1448" vertical-scroll-proportion="-19.310345">
+            <state line="28" column="48" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="411" column="12" selection-start="27312" selection-end="27323" vertical-scroll-proportion="31.7">
+            <state line="411" column="12" selection-start="27312" selection-end="27323" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,8 +132,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -182,6 +180,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,8 +189,8 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="preferences.editor" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -374,44 +374,40 @@
         <state line="22" column="32" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.4017094" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ad_syad2.asp">
+    <entry file="file://$PROJECT_DIR$/admin/admin_up_article.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="57" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/old.asp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="717" column="0" selection-start="32989" selection-end="33044" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="411" column="12" selection-start="27312" selection-end="27323" vertical-scroll-proportion="31.7">
+        <state line="816" column="48" selection-start="28993" selection-end="28993" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="48" selection-start="1448" selection-end="1448" vertical-scroll-proportion="-19.310345">
+        <state line="28" column="48" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin_up_article.asp">
+    <entry file="file://$PROJECT_DIR$/scripts/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="816" column="48" selection-start="28993" selection-end="28993" vertical-scroll-proportion="-0.40677965">
+        <state line="411" column="12" selection-start="27312" selection-end="27323" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ad_syad2.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="57" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old.asp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="717" column="0" selection-start="32989" selection-end="33044" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.asp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="68" selection-start="10154" selection-end="10154" vertical-scroll-proportion="0.8235294">
+        <state line="517" column="0" selection-start="25038" selection-end="25038" vertical-scroll-proportion="0.35211268">
           <folding />
         </state>
       </provider>

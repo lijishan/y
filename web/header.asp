@@ -17,22 +17,24 @@
 
 <style type="text/css" media="screen"></style>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: 13px
+}
+-->
+</style>
 </head>
 <body>
 <div class="container_12" id="wrapper">
 	<div class="grid_12" id="navigation">
 		<h1><a href="/" title="" rel="noreferrer">
-		<embed src="images/banner.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent" width="940" height="120" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="always"></embed>
+		  <embed src="images/banner.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent" width="940" height="120" pluginspage="http://www.macromedia.com/go/getflashplayer" allowscriptaccess="always"></embed>
 		</a></h1>
-	</div>
+</div>
 	<div class="grid_12" id="nav">
-		<span id='date_span' style='margin-top:3px'>
-			<script language="javascript">
-                d = new Date();
-                document.write(d.getFullYear()+"年"+(d.getMonth()+1)+"月"+d.getDate()+"日");
-            </script>
-		</span>
-		<ul>
+		<span>欢迎光临</span>
+		<ul class="STYLE1">
 			<li><a href="/" title="" rel="noreferrer">主页</a></li>
 			<li><a href="/list.asp?class=1001" title="" rel="noreferrer">就业服务</a></li>
 			<li><a href="/list.asp?class=1002" title="" rel="noreferrer">人才交流</a></li>
@@ -42,4 +44,4 @@
 			<li><a href="/list.asp?class=1006" title="" rel="noreferrer">人才求职意向</a></li>
 			<li><a href="/login.asp" title="" rel="noreferrer">会员中心</a></li>
 		</ul>
-	</div>
+     </div></center>

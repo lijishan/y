@@ -279,7 +279,7 @@ if Request.Cookies("id")="" or Request.Cookies("ac")="" or Request.Cookies("user
 %>
       <tr>
         <td height="16" style="border-left: 1px solid #C0C0C0; border-right: 1px solid #C0C0C0; border-top-width: 1px; border-bottom: 1px solid #D5EAF4" colspan="2"><p align="center"> <br>
-        <div align="right">请<a href="index.asp">登陆</a>后查看&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div align="right">请<a href="index_bak.asp">登陆</a>后查看&nbsp;&nbsp;&nbsp;&nbsp;</div>
                   </td>
       </tr>
 	  <%if rs ("vip")=true then%>

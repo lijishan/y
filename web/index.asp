@@ -3,13 +3,25 @@
 <%
     dim array_news
 %>
-
-    <div class="grid_12" style="height:10px;"></div>
-    <div class="grid_12" id="featured-articles">
+<script src="scripts/cycle/jquery.cycle.all.js"></script>
+	<div class="grid_12">
+      <div class='weather_box' style='height:36px'>
+        <div class="grid_3 alpha" style='padding:8px'>
+          <iframe name="weather_inc" src="http://cache.xixik.com.cn/11/guangxiyulin/" width="380" height="15" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+        </div>
+        <div class="grid_7 omega"  style='padding:4px;float:right;text-align:right'>
+          <input onFocus="this.value=''" type="text" name="what2" size="40" style="padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" value="请输入关键字">
+          <input type='button' value='搜职位'>
+          &nbsp;
+          <input type='button' value='搜人才'>
+        </div>
+      </div>
+  </div>
+<div class="grid_12" id="featured-articles">
         <div class="grid_4 alpha" id="slide">
             <div><img src="/images/editorimages/20120811-1.jpg" height="300px"/></div>
             <div class="img-caption grid_4 alpha omega" align="center">玉州区积极部署 严防“海葵”</div>
-        </div>
+    </div>
         <div class="grid_5 news-widget1" id="news">
             <div id="tabs1" class="news-widget1">
                 <ul>
@@ -112,10 +124,10 @@
                     article_num = 10
                     class_id = 1009
                 %>
-                <h4 class="section-header header">近期招聘会 <span><a href="list.asp?class=<%=class_id%>">更多&gt;&gt;</a></span></h4>
+                <h4 class="section-header header">招聘会信息 <span><a href="list.asp?class=<%=class_id%>">更多&gt;&gt;</a></span></h4>
                 <ul>
-                    <!--#include file="index_info.asp"-->
-                    <%
+                  <!--#include file="index_info.asp"-->
+                  <%
                     if (ubound(array_news) > 0) then
                         for i1=0 to ubound(array_news, 2)
                             id = array_news(0, i1)
@@ -124,41 +136,35 @@
                             class_id = array_news(3, i1)
                         %>
                             <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a></li>
-                    <%
+                            <%
                         next
                     else
                     %>
-                        <li class="news-item"> 暂无信息 </li>
-                    <%
+                    <li class="news-item"> 暂无信息 </li>
+        <%
                     End if
                     %>
-                    </ul>
+              </ul>
                 </ul>
             </div>
         </div>
-    </div>
+  </div>
     <div class="clear"></div>
-    <div class="grid_12" style="height:10px;"></div>
     <!-- search bar -->
-    <div class="grid_12">
-        <div class='weather_box' style='height:36px'>
-            <div class="grid_4 alpha" style='padding:8px'>
-                <iframe name="weather_inc" src="http://cache.xixik.com.cn/11/guangxiyulin/" width="300" height="15" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
-            </div>
-            <div class="grid_7 omega"  style='padding:4px;float:right;text-align:right'>
-            <input onFocus="this.value=''" type="text" name="what" size="40" style="padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" value="请输入关键字">
-            <input type='button' value='搜职位'> &nbsp; <input type='button' value='搜人才'>
-            </div>
-        </div>
-    </div>
-    <div class="grid_12" style="height:10px;"></div>
     <div class="grid_12" style="overflow:hidden">
         <embed src="/images/adbanner.swf" quality="high" type="application/x-shockwave-flash" wmode="transparent" width="940" height="120" pluginspage="http://www.macromedia.com/go/getflashplayer" allowScriptAccess="always"></embed>
     </div>
-    <div class="clear"></div>
-    <div class="grid_12" style="height:10px;"></div>
     <div class="grid_12">
         <div class="grid_6 alpha" id="news3">
+            <div class=" news-widget1 info-widget">
+                <h4 class="section-header header">市场简介<span><a href="list.asp?class=<%=class_id%>">详情&gt;&gt;</a></span></h4>
+                <ul>
+                	<li class="news-item">人力资源市场是求职者和用人单位进行双向选择、双向交流的平台，其服务对象是专业技能人才、失业职工、大中专毕业生、进城务工者等人员。<br>
+玉林市玉州区人力资源市场是玉州区人民政府为百姓充分就业和企业用人建设的服务平台，是在自治区劳动保障厅、玉林市劳动保障局的大力支持下，于2009年1月20日建成并投入使用的。玉州区人力资源市场占地面积1234.8平方米，使用面积1310.8平方米，功能设置区域有信息发布区、前台服务区、招聘洽谈区、档案资料保管区、办公区等，设有政策咨询、失业登记、求职登记、职业介绍、就业援助、招聘洽谈、用工备案、档案托管、社保代理、受理培训、鉴定申报等10多个服务窗口，可同时容纳1000多人进行劳务交流活动……</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid_6 omega" id="news4">
             <div class=" news-widget1 info-widget">
                 <%
                     article_num = 10
@@ -187,52 +193,86 @@
                 </ul>
             </div>
         </div>
-        <div class="grid_6 omega" id="news4">
-            <div class=" news-widget1 info-widget">
-                <%
-                   article_num = 10
-                   class_id = 1031
-                %>
-                <h4 class="section-header header">机构设置<span><a href="list.asp?class=<%=class_id%>">更多&gt;&gt;</a></span></h4>
-                <ul>
-                    <!--#include file="index_info.asp"-->
-                    <%
-                    if (ubound(array_news) > 0) then
-                        for i1=0 to ubound(array_news, 2)
-                            id = array_news(0, i1)
-                            title = array_news(1, i1)
-                            pub_time = array_news(2, i1)
-                            class_id = array_news(3, i1)
-                        %>
-                            <li class="news-item"><!--[<%=class_id%>]--><a target=_blank href="view.asp?what=article&id=<%=id%>"><%=title%></a>&nbsp;&nbsp;<span>[<%=pub_time%>]</span></li>
-                    <%
-                        next
-                    else
-                    %>
-                        <li class="news-item"> 暂无信息 </li>
-                    <%
-                    End if
-                    %>
-                </ul>
-            </div>
-        </div>
     </div>
-    <div class="grid_12" style="height:10px;"></div>
-    <div class="grid_12" style='height:120px;overflow:hidden'>
-     	<div id="tour_marquee">
-            <img src="images/tour1.jpg" height="125" title="大容山森林公园"/>
-            <img src="images/tour2.jpg" height="125" title="探访云天文化城"/>
-            <img src="images/tour3.jpg" height="125" title="真武阁"/>
-            <img src="images/tour4.jpg" height="125" title="美丽的罗政村"/>
-            <img src="images/tour5.jpg" height="125" title="望君山：生态美景"/>
+  <div class="grid_12" style='height:136px;overflow:hidden'>
+    	      <TR> 
+                <th height=148 bgcolor="#CCCCCC" style="padding:0; text-align:center; border-left-style:solid; border-left-width:1px; border-top-style:solid; border-top-width:1px; border-bottom-style:solid; border-bottom-width:1px" bordercolorlight="#C0C0C0"><iframe name="I1" marginwidth="1" marginheight="1" width="940" height="136" scrolling="no" src="MyPhoto.html"> 浏览器不支持嵌入式框架，或被配置为不显示嵌入式框架。</iframe></th>
+    	      </TR>
+      <TR> 
+      	<!--script>
+	      	$('#tour_slide0').cycle({
+	    		fx:      'turnDown',
+	    		delay:   -4300
+			});
+      	</script-->
+      	<!--
+      	<div style="width:200px;left:420px;position:relative;">
+     	<div id="tour_slide1" class='pics' style="position: relative; width:200px">
+            <img src="images/tour2.jpg" width="200" title="探访云天文化城"/>
+            <img src="images/tour3.jpg" width="200" title="真武阁"/>
+            <img src="images/tour4.jpg" width="200" title="美丽的罗政村"/>
+            <img src="images/tour5.jpg" width="200" title="望君山：生态美景"/>
+            <img src="images/tour1.jpg" width="200" title="大容山森林公园"/>
       	</div>
+      	</div>
+      	<script>
+	      	$('#tour_slide1').cycle({
+	    		fx:      'turnDown',
+	    		delay:   -1600
+			});
+      	</script>
+      	<div style="width:200px;left:630px;position:relative;">
+     	<div id="tour_slide2" class='pics' style="position: relative; ">
+            <img src="images/tour3.jpg" width="200" title="真武阁"/>
+            <img src="images/tour4.jpg" width="200" title="美丽的罗政村"/>
+            <img src="images/tour5.jpg" width="200" title="望君山：生态美景"/>
+            <img src="images/tour1.jpg" width="200" title="大容山森林公园"/>
+            <img src="images/tour2.jpg" width="200" title="探访云天文化城"/>
+      	</div>
+      	</div>
+      	<script>
+	      	$('#tour_slide2').cycle({
+	    		fx:      'turnDown',
+	    		delay:   -2900
+			});
+      	</script>
+      	<div style="width:200px;left:840px;position:relative;">
+     	<div id="tour_slide3" class='pics' style="position: relative; ">
+            <img src="images/tour5.jpg" width="200" title="望君山：生态美景"/>
+            <img src="images/tour1.jpg" width="200" title="大容山森林公园"/>
+            <img src="images/tour2.jpg" width="200" title="探访云天文化城"/>
+            <img src="images/tour3.jpg" width="200" title="真武阁"/>
+            <img src="images/tour4.jpg" width="200" title="美丽的罗政村"/>
+      	</div>
+      	</div>
+      	<script>
+	      	$('#tour_slide3').cycle({
+	    		fx:      'turnDown',
+	    		delay:   -2600
+			});
+      	</script>
+      	<div style="width:200px;left:210px;position:relative;">
+     	<div id="tour_slide4" class='pics' style="position: relative; ">
+            <img src="images/tour4.jpg" width="200" title="美丽的罗政村"/>
+            <img src="images/tour5.jpg" width="200" title="望君山：生态美景"/>
+            <img src="images/tour1.jpg" width="200" title="大容山森林公园"/>
+            <img src="images/tour2.jpg" width="200" title="探访云天文化城"/>
+            <img src="images/tour3.jpg" width="200" title="真武阁"/>
+      	</div>
+		</div>
+      	<script>
+	      	$('#tour_slide4').cycle({
+	    		fx:      'turnDown',
+	    		delay:   -3500
+			});
+      	</script>
+      	-->
     </div>
-    <div class="grid_12" style="height:10px;"></div>
     <!-- 会员中心 -->
     <div class="grid_12" style="overflow:hidden">
             <!--登录与搜索-->
-            <div class="grid_4 alpha" style="overflow:hidden">
-                <div class="grid_4 alpha omega" style="overflow:hidden">
+            <div class="grid_3 alpha" style="overflow:hidden">
+                <div class="grid_3 alpha omega" style="overflow:hidden">
                     <div class="search_box" style="height:180px">
                         <h4 class="section-header header">会员登录</h4>
                         <div>
@@ -246,20 +286,20 @@
                     %>
                         <form methond="post" action="/login.asp" onSubmit="return test()">
                             <div class="grid_1 alpha">&nbsp;&nbsp;用户名: </div>
-                            <div class='grid_3 alpha omega'><input type='text' size='28' name='name'></div>
+                            <div class='grid_2 alpha omega'><input type='text' size='16' name='name'></div>
                             <div class='grid_1 alpha'>&nbsp;&nbsp;密 码:</div>
-                            <div class='grid_3 alpha omega'><input type='password' size='28' name='pwd'></div>
+                            <div class='grid_2 alpha omega'><input type='password' size='16' name='pwd'></div>
                             <div class='grid_1 alpha'>&nbsp;&nbsp;验证码:</div>
-                            <div class='grid_3 alpha omega'><input type='text' size='14' name='code'><%call getcode()%></div>
+                            <div class='grid_2 alpha omega'><input type='text' size='8' name='code'><%call getcode()%></div>
                             <div class='grid_1 alpha'>&nbsp;&nbsp;会员类型</div>
-                            <div class='grid_3  alpha omega'>
+                            <div class='grid_2  alpha omega'>
                                 <select size="1" name="user">
 									<option selected value="0">-请选择会员类别-</option>
 										<option value="1" selected>个人用户</option>
 										<option value="2">企业用户</option>
-									</select>
+							  </select>
 							</div>
-                            <div class='grid_2 alpha omega' style="alignt:center">&nbsp;&nbsp;<input type='submit' size='10' value='登录'></div>
+                            <div class='grid_1 alpha omega' style="alignt:center">&nbsp;&nbsp;<input type='submit' size='10' value='登录'></div>
                             <div class='grid_2 alpha omega' style="alignt:center">&nbsp;<input type='submit' size='10' value='忘记密码'></div>
                         </form>
                     <%
@@ -270,7 +310,7 @@
                         rs.close
                     %>
                             <div class="grid_3">
-                                欢迎<%
+                    欢迎<%
                                         if Request.Cookies("user")="1" then response.write"个人用户"
                                         if Request.Cookies("user")="2" then response.write"企业用户"
                                     %>
@@ -291,8 +331,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid_4 alpha omega" style="height:10px;"></div>
-                <div class="grid_4 alpha omega" style="overflow:hidden">
+                <div class="grid_3 alpha omega" style="height:10px;"></div>
+                <div class="grid_3 alpha omega" style="overflow:hidden">
                     <div class="search_box"style="height:265px">
                         <h4 class="section-header header">职位搜索</h4>
 <!--搜索框开始-->
@@ -359,15 +399,15 @@ end if %></td>
                 </div>
             </div>
             <!-- 热门职位 -->
-            <div class="grid_5" style="overflow:hidden">
-                <div class="info-widget " style="height:458px">
+            <div class="grid_6" style="overflow:hidden">
+                <div class="info-widget " style="height:461px">
                     <h4 class="section-header header">热门职位<span><a href="grqz1.asp">更多&gt;&gt;</a></span></h4>
                     <!--#include file="ad_syad1.asp"-->
                 </div>
             </div>
             <!-- 人才推荐 -->
             <div class="grid_3 omega" style="overflow:hidden">
-                <div class="search_box" style="height:458px">
+                <div class="search_box" style="height:460px">
                     <h4 class="section-header header">人才推荐</h4>
 <%
 sql="select top "&index4&" id,name,job1,gzdd,edu,sex,rdate,zhuanyen1,gzcs from in_user where lock=false and name<>''  order by rdate desc"
@@ -398,14 +438,13 @@ end if
                 </div>
             </div>
     </div>
-    <div class="grid_12" style="height:10px;"></div>
     <!--热门招聘 -->
-    <div class="grid_12">
+<div class="grid_12">
         <div class="grid_9 alpha">
-            <div class='info-widget search_box' style="height:200px">
+          <div class='info-widget search_box' style="height:200px">
                 <h4 class="section-header header" style='margin-bottom:0px;'>热门招聘</h4>
                 <!--#include file="ad_syad2.asp"-->
-            </div>
+          </div>
         </div>
         <div class="grid_3 omega">
             <div class='info-widget' style="height:200px">
@@ -432,10 +471,9 @@ end if
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="grid_12" style="height:10px;"></div>
-    <!--名企招聘 -->
-    <div class="grid_12">
+  </div>
+<!--名企招聘 -->
+<div class="grid_12">
         <div class="grid_12 alpha omega info-widget" style="min-height:200px">
             <h4 class="section-header header">名企招聘</h4>
             <ul>
@@ -443,7 +481,7 @@ end if
 sql="select top "&index2&" en_user.name,en_user.rdate,en_user.area,en_user.id from en_user where name<>'' order by en_user.id desc"
 rs.open sql,conn,1,1
 %>
-                          <%for ii=1 to index2 %>
+<%for ii=1 to index2 %>
 						  <li class="news-item"><a target =_blank title=" 〖<%=rs("area")%>〗" href="company.asp?id=<%=rs("id")%>" class="STYLE11"><%=rs("name")%>（<%=rs("area")%>）</a></li>
                                                   <%
 rs.movenext
@@ -453,9 +491,9 @@ rs.close
 %>
             </ul>
         </div>
-    </div>
+  </div>
 
-    <script>
+  <script>
             $(function() {
                 $( "#tabs1" ).tabs({
                     event: "mouseover"
@@ -464,6 +502,11 @@ rs.close
     </script>
     <!--#include file="footer.asp"-->
 </div>
+
+<div id="followDiv3" style="z-index: 10; position: absolute; width: 80px; height: 60px; left: 0px; top: 450px; "><a href="#" target="_blank" rel="noreferrer"><img src="ad/da.jpg" border="0" style="2"></a></div>
+<div id="followDiv2" style="z-index: 10; position: absolute; width: 80px; height: 60px; RIGHT: 0px; top: 389px; "><a href="javascript:popMe()" rel="noreferrer"><a href="javascript:popMe()" rel="noreferrer"><a href="javascript:popMe()" rel="noreferrer"></a><a href="javascript:popMe()" rel="noreferrer"><img src="ad/db.gif" alt="" border="0"></a></a></a><br>
+</div>
+
 <script language=javascript>
   function test()
   {

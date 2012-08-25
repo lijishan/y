@@ -508,7 +508,7 @@ set rs1=nothing
 					%>
   <tr>
     <td height="100%" align="center" colspan="4">
-<br><div align="right">请<a href="index.asp">登陆</a>后查看&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<br><div align="right">请<a href="index_bak.asp">登陆</a>后查看&nbsp;&nbsp;&nbsp;&nbsp;</div>
 </td>
   </tr>
   <%if rs ("vip")=true then%>

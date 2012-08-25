@@ -59,7 +59,7 @@
                       <tr>
                         <td width="9"></td>
                         <td class="top_m" align="middle" width="44"><a class="per_menu" 
-                        href="index.asp">Ê× Ò³</a></td>
+                        href="index_bak.asp">Ê× Ò³</a></td>
                         <td width="2"><img height="28" 
                         src="imagen/m_line.gif" 
                       width="2" /></td>
