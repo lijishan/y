@@ -1,9 +1,0 @@
-<%
-set rs=server.createobject("adodb.recordset")
-conn = "DBQ="&server.mappath("../db/zp#db.mdb")&";DefaultDir=;DRIVER={Microsoft Access Driver (*.mdb)};"
-%>
-
-<%
-  set conn=server.createobject("adodb.connection")
-  conn.Open "provider=Microsoft.jet.oledb.4.0;data source=" & Server.MapPath("../db/zp#db.mdb")
-%>
